@@ -2,8 +2,13 @@
 
 sudo apt-get update
 sleep 1
+sudo apt-get install gcc-arm-none-eabi binutils-arm-none-eabi gdb-arm-none-eabi
 sudo apt-get install python-pip
 pip install pyserial
+git clone https://github.com/wassfila/STM32_IoT_HelloWorld # more cool examples here
+#  https://developer.mbed.org/users/hudakz/code/STM32F103C8T6_Hello/
+# http://sgreg.fi/blog/article/bare-metal-arm-cortexm-hello-world-on-linux
+# https://www.hackster.io/paramaggarwal/converting-an-stm32f103-board-to-a-black-magic-probe-e701d4
 git clone https://github.com/jsnyder/stm32loader.git
 cd stm32loader
 #Using the python tool to load the firmware device
